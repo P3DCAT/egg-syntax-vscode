@@ -43,7 +43,7 @@
 		"name": "markup.underline.egg"
 	  },
 	  "keywords": {
-		"match": "rgb|rgba|linear|modulate|dual|repeat|ground|sphere|barrier|shground|floor|tube",
+		"match": "rgb|rgba|luminance|structured|linear|mipmap|modulate|dual|binary|blend|blend_no_occlude|ms|repeat|ground|sphere|barrier|shground|floor|tube|axis|net|local|",
 		"name": "markup.italic.egg"
 	  },
 	  "kwcoll": {
@@ -63,7 +63,7 @@
 		"name": "entity.name.function.egg"
 	  },
 	  "subgroup": {
-		"match": "VertexPool|Polygon",
+		"match": "VertexPool|Polygon|Model|BFace|DCS",
 		"name": "variable.other.egg"
 	  },
 	  "collectiongroup": {
@@ -71,7 +71,7 @@
 		"name": "variable.other.egg"
 	  },
 	  "vertexgroup": {
-		"match": "Normal|RGBA|UV|TRef|VertexRef|Ref",
+		"match": "Normal|RGBA|UV|TRef|MRef|VertexRef|Ref|Translate",
 		"name": "support.type.egg"
 	  },
 	  "subvertexgroup": {
