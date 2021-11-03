@@ -9,15 +9,6 @@
     "categories": [
         "Programming Languages"
     ],
-    "tokenColors": [
-      {
-        "scope": "comment",
-        "settings": {
-          "foreground": "#dd0000",
-          "fontStyle": "italic"
-        }
-      }
-    ],
     "contributes": {
       "languages": [
         {
@@ -35,10 +26,7 @@
           "path": "./syntaxes/abc.tmGrammar.json"
         }
       ],
-      "semanticHighlighting": true,
-      "semanticTokenColors": {
-      "variable.other.egg": { "foreground": "#00ff00", "fontStyle": "bold" }
-    }
+      "semanticHighlighting": true
     }
 
 }
