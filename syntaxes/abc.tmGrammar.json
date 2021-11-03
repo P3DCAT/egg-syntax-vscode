@@ -17,11 +17,11 @@
 			{ "include": "#texture" },
 			{ "include": "#vertexgroup" },
 			{ "include": "#maingroup" },
+			{ "include": "#subgroup" },
 			{ "include": "#collectiongroup" },
 
 			{ "include": "#subvertexgroup" },
 
-			{ "include": "#subgroup" },
 
 			{ "include": "#attributeHeader" },
 			{ "include": "#paren-expression1" },
@@ -70,8 +70,8 @@
 		"name": "support.type.egg"
 	  },
 	  "subvertexgroup": {
-		"match": "Tangent|Binomial",
-		"name": "variable.other.egg"
+		"match": "Tangent|Binormal",
+		"name": "support.variable.egg"
 	  },
 	  "paren-expression": {
 		"begin": "{",
