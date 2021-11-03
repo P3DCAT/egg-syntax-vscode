@@ -48,7 +48,7 @@
 		"name": "markup.underline.egg"
 	  },
 	  "keywords": {
-		"match": "rgb|rgba|luminance|structured|linear|mipmap|modulate|dual|binary|blend|blend_no_occlude|ms|repeat|ground|sphere|barrier|shground|floor|tube|axis|net|local",
+		"match": "rgb|rgba|luminance|structured|linear|mipmap|modulate|dual|binary|blend|blend_no_occlude|ms|clamp|repeat|ground|sphere|barrier|shground|floor|tube|axis|net|local",
 		"name": "markup.italic.egg"
 	  },
 	  "kwcoll": {
