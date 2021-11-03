@@ -1,0 +1,124 @@
+{
+	"scopeName": "source.egg",
+	"patterns": [{ "include": "#expression" }],
+	"repository": {
+	  "expression": {
+		"patterns": [
+			{ "include": "#commentTag" },
+			{ "include": "#comment" },
+			{ "include": "#texPath" },
+			{ "include": "#keywords" },
+
+
+			{ "include": "#transform" },
+			{ "include": "#subtransform" },
+			{ "include": "#scalar" },
+			{ "include": "#texture" },
+			{ "include": "#collectiongroup" },
+
+			{ "include": "#vertexgroup" },
+			{ "include": "#subvertexgroup" },
+
+			{ "include": "#subgroup" },
+
+			{ "include": "#attributeHeader" },
+			{ "include": "#paren-expression1" },
+			{ "include": "#paren-expression" }
+
+		]
+	  },
+	  "texture": {
+		"match": "Texture",
+		"name": "entity.other.attribute-name.egg"
+	  },
+	  "scalar": {
+		"match": "Scalar",
+		"name": "variable.other.egg"
+	  },
+	  "keywords": {
+		"match": "rgb|rgba|linear|modulate|dual|repeat",
+		"name": "markup.italic.egg"
+	  },
+	  "transform": {
+		"match": "Transform",
+		"name": "markup.bold.egg"
+	  },
+	  "subtransform": {
+		"match": "Matrix4|Matrix3",
+		"name": "markup.bold.egg"
+	  },
+	  "subgroup": {
+		"match": "VertexPool|Polygon",
+		"name": "variable.other.egg"
+	  },
+	  "collectiongroup": {
+		"match": "Vertex",
+		"name": "variable.other.egg"
+	  },
+	  "vertexgroup": {
+		"match": "Normal|RGBA|UV",
+		"name": "variable.other.egg"
+	  },
+	  "subvertexgroup": {
+		"match": "Tangent|Binomial",
+		"name": "variable.other.egg"
+	  },
+	  "paren-expression": {
+		"begin": "{",
+		"end": "}",
+		"beginCaptures": {
+		  "4": { "name": "punctuation.paren.open.egg" }
+		},
+		"endCaptures": {
+		  "4": { "name": "punctuation.paren.close.egg" }
+		},
+		"name": "entity.name.section.attribute.egg",
+		"patterns": [{ "include": "#expression" }]
+	  },
+	  "paren-expression1": {
+		"begin": "{",
+		"end": "}",
+		"beginCaptures": {
+		  "2": { "name": "punctuation.paren.open.egg" }
+		},
+		"endCaptures": {
+		  "2": { "name": "punctuation.paren.close.egg" }
+		},
+		"name": "entity.name.type.value.egg",
+		"patterns": [{ "include": "paren-expression" }]
+	  },
+	  "attributeHeader": {
+		"begin": "<",
+		"end": ">",
+		"beginCaptures": {
+		  "1": { "name": "punctuation.paren.open.egg" }
+		},
+		"endCaptures": {
+		  "1": { "name": "punctuation.paren.close.egg" }
+		},
+		"name": "entity.name.tag.attributeHeader.egg",
+		"patterns": [{ "include": "#expression" }]
+	  },
+	  "texPath": {
+		"begin": "\"",
+		"end": "\"",
+		"beginCaptures": {
+		  "1": { "name": "punctuation.paren.open.egg" }
+		},
+		"endCaptures": {
+		  "1": { "name": "punctuation.paren.close.egg" }
+		},
+		"name": "string.double.egg",
+		"patterns": [{ "include": "#expression" }]
+	  },
+	  "commentTag": {
+		"begin": "<Comment> {",
+		"end": "}",
+		"name": "comment.block.documentation.egg"
+	  },
+	  "comment": {
+		"match": "//",
+		"name": "comment.line.double-slash.egg"
+	  }
+	}
+  }

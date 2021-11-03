@@ -1,0 +1,44 @@
+{
+  "name": "panda3d-egg-syntax",
+  "displayName": "Panda3D EGG Syntax",
+  "description": "Plugin for Panda3D EGG file support",
+  "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "tokenColors": [
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#dd0000",
+          "fontStyle": "italic"
+        }
+      }
+    ],
+    "contributes": {
+      "languages": [
+        {
+          "id": "egg",
+          "extensions": [".egg"],
+          "configuration": "language-configuration.json",
+          "filenames": [".egg"]
+
+        }
+      ],
+      "grammars": [
+        {
+          "language": "egg",
+          "scopeName": "source.egg",
+          "path": "./syntaxes/abc.tmGrammar.json"
+        }
+      ],
+      "semanticHighlighting": true,
+      "semanticTokenColors": {
+      "variable.other.egg": { "foreground": "#00ff00", "fontStyle": "bold" }
+    }
+    }
+
+}
