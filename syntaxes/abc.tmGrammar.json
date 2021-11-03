@@ -8,6 +8,7 @@
 			{ "include": "#comment" },
 			{ "include": "#texPath" },
 			{ "include": "#keywords" },
+			{ "include": "#objtype" },
 
 
 			{ "include": "#transform" },
@@ -35,8 +36,12 @@
 		"match": "Scalar",
 		"name": "variable.other.egg"
 	  },
+	  "objtype": {
+		"match": "ObjectType",
+		"name": "markup.underline.egg"
+	  },
 	  "keywords": {
-		"match": "rgb|rgba|linear|modulate|dual|repeat",
+		"match": "rgb|rgba|linear|modulate|dual|repeat|ground|sphere|barrier|shground|floor|tube",
 		"name": "markup.italic.egg"
 	  },
 	  "transform": {
