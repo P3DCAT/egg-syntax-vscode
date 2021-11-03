@@ -8,6 +8,7 @@
 			{ "include": "#comment" },
 			{ "include": "#texPath" },
 			{ "include": "#keywords" },
+			{ "include": "#kwcoll" },
 			{ "include": "#objtype" },
 
 
@@ -25,7 +26,7 @@
 
 			{ "include": "#attributeHeader" },
 			{ "include": "#paren-expression1" },
-			{ "include": "#paren-expression" }
+			{ "include": "#paren-expression" },
 
 		]
 	  },
@@ -44,6 +45,10 @@
 	  "keywords": {
 		"match": "rgb|rgba|linear|modulate|dual|repeat|ground|sphere|barrier|shground|floor|tube",
 		"name": "markup.italic.egg"
+	  },
+	  "kwcoll": {
+		"match": "collisions|coll|collision",
+		"name": "support.variable.egg"
 	  },
 	  "transform": {
 		"match": "Transform",
