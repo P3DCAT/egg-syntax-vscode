@@ -15,6 +15,7 @@
 			{ "include": "#transform" },
 			{ "include": "#subtransform" },
 			{ "include": "#scalar" },
+			{ "include": "#scalarTypes" },
 			{ "include": "#texture" },
 			{ "include": "#vertexgroup" },
 			{ "include": "#maingroup" },
@@ -36,6 +37,10 @@
 	  },
 	  "scalar": {
 		"match": "Scalar",
+		"name": "variable.other.egg"
+	  },
+	  "scalarTypes": {
+		"match": "alpha|fps|minfilter|magfilter",
 		"name": "variable.other.egg"
 	  },
 	  "objtype": {
