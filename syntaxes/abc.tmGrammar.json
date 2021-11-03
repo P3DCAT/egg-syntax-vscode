@@ -15,10 +15,10 @@
 			{ "include": "#subtransform" },
 			{ "include": "#scalar" },
 			{ "include": "#texture" },
+			{ "include": "#vertexgroup" },
 			{ "include": "#maingroup" },
 			{ "include": "#collectiongroup" },
 
-			{ "include": "#vertexgroup" },
 			{ "include": "#subvertexgroup" },
 
 			{ "include": "#subgroup" },
@@ -66,8 +66,8 @@
 		"name": "variable.other.egg"
 	  },
 	  "vertexgroup": {
-		"match": "Normal|RGBA|UV",
-		"name": "variable.other.egg"
+		"match": "Normal|RGBA|UV|TRef|VertexRef|Ref",
+		"name": "support.type.egg"
 	  },
 	  "subvertexgroup": {
 		"match": "Tangent|Binomial",
