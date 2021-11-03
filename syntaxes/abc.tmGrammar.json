@@ -15,6 +15,7 @@
 			{ "include": "#subtransform" },
 			{ "include": "#scalar" },
 			{ "include": "#texture" },
+			{ "include": "#maingroup" },
 			{ "include": "#collectiongroup" },
 
 			{ "include": "#vertexgroup" },
@@ -51,6 +52,10 @@
 	  "subtransform": {
 		"match": "Matrix4|Matrix3",
 		"name": "markup.bold.egg"
+	  },
+	  "maingroup": {
+		"match": "Group",
+		"name": "entity.name.function.egg"
 	  },
 	  "subgroup": {
 		"match": "VertexPool|Polygon",
