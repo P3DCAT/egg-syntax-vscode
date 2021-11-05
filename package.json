@@ -14,7 +14,7 @@
         {
           "id": "egg",
           "extensions": [".egg"],
-          "configuration": "language-configuration.json",
+          "configuration": "config/language-configuration.json",
           "filenames": [".egg"]
 
         }
@@ -23,7 +23,7 @@
         {
           "language": "egg",
           "scopeName": "source.egg",
-          "path": "./syntaxes/abc.tmGrammar.json"
+          "path": "config/eggGrammar.json"
         }
       ],
       "themes": [

@@ -10,7 +10,11 @@
 			{ "include": "#keywords" },
 			{ "include": "#kwcoll" },
 			{ "include": "#objtype" },
-			{ "include": "#headerdata" },
+			{ "include": "#vertexpool" },
+			{ "include": "#coordsysvalues" },
+			{ "include": "#polygon" },
+
+
 
 
 			{ "include": "#transform" },
@@ -25,6 +29,7 @@
 
 			{ "include": "#subvertexgroup" },
 
+			{ "include": "#headerdata" },
 
 			{ "include": "#attributeHeader" },
 			{ "include": "#paren-expression1" }
@@ -44,12 +49,16 @@
 		"name": "header.object.egg"
 	  },
 	  "scalarTypes": {
-		"match": "alpha|fps|minfilter|magfilter|format|wrap|envtype|anisotropic-degree",
+		"match": "\\b(\\w*alpha|fps|minfilter|magfilter|format|wrap|envtype|anisotropic-degree\\w*)\\b",
 		"name": "types.scalar.egg"
 	  },
 	  "keywords": {
 		"match": "\\b(\\w*rgb|rgba|luminance|structured|linear|mipmap|modulate|dual|binary|blend|blend_no_occlude|ms|clamp|repeat|ground|sphere|barrier|shground|floor|tube|axis|net|local\\w*)\\b",
 		"name": "types.general.egg"
+	  },
+	  "coordsysvalues": {
+		"match": "[X-Z]-Up",
+		"name": "types.cs.egg"
 	  },
 	  "kwcoll": {
 		"match": "collisions|coll|collision",
@@ -57,30 +66,38 @@
 	  },
 	  "transform": {
 		"match": "Transform",
-		"name": "header.transform.egg"
+		"name": "attr.transform.egg"
 	  },
 	  "subtransform": {
 		"match": "Matrix4|Matrix3",
 		"name": "types.transform.matrix.egg"
 	  },
 	  "maingroup": {
-		"match": "Group",
+		"match": "\\b(\\w*Group\\w*)\\b",
 		"name": "header.group.master.egg"
 	  },
+	  "vertexpool": {
+		"match": "\\b(\\w*VertexPool\\w*)\\b",
+		"name": "header.vertexpool.egg"
+	  },
 	  "subgroup": {
-		"match": "\\b(\\w*VertexPool|Polygon|Model|BFace|DCS\\w*)\\b",
+		"match": "\\b(\\w*Model|BFace|DCS\\w*)\\b",
 		"name": "header.group.sub.egg"
 	  },
 	  "collectiongroup": {
 		"match": "Vertex",
-		"name": "header.vertex.egg"
+		"name": "attr.vertex.egg"
+	  },
+	  "polygon": {
+		"match": "\\b(\\w*Polygon\\w*)\\b",
+		"name": "attr.polygon.egg"
 	  },
 	  "vertexgroup": {
 		"match": "\\b(\\w*Normal|RGBA|UV|TRef|MRef|VertexRef|Ref|Translate\\w*)\\b",
 		"name": "header.group.vertex.master.egg"
 	  },
 	  "subvertexgroup": {
-		"match": "Tangent|Binormal",
+		"match": "\\b(\\w*Tangent|Binormal\\w*)\\b",
 		"name": "header.group.vertex.sub.egg"
 	  },
 	  "headerdata": {
@@ -137,7 +154,7 @@
 		"name": "comment.header.egg"
 	  },
 	  "comment": {
-		"match": "//",
+		"match": "^//.*",
 		"name": "comment.line.egg"
 	  }
 	}
