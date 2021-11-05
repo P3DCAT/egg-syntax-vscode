@@ -1,0 +1,166 @@
+{
+	"tokenColors": [
+		{
+			"name": "Comments",
+			"scope": [
+				"comment.header.egg",
+				"comment.line.egg"
+			],
+			"settings": {
+				"foreground": "#6A9955"
+			}
+		},
+		{
+			"name": "<Texture> attribute header",
+			"scope": [
+				"header.texture.egg"
+			],
+			"settings": {
+				"foreground": "#d47663",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "<Scalar> attribute header",
+			"scope": [
+				"attr.scalar.egg"
+			],
+			"settings": {
+				"foreground": "#9CDCFE",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "<ObjectType> attribute header",
+			"scope": [
+				"header.object.egg"
+			],
+			"settings": {
+				"foreground": "#f75ca9",
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "<Transform> attribute header",
+			"scope": [
+				"attr.transform.egg"
+			],
+			"settings": {
+				"foreground": "#54a7eb"
+			}
+		},
+		{
+			"name": "<Group> attribute header",
+			"scope": [
+				"header.group.master.egg"
+			],
+			"settings": {
+				"foreground": "#5579cf",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "<Vertex> attribute header",
+			"scope": [
+				"attr.vertex.egg"
+			],
+			"settings": {
+				"foreground": "#60cc69"
+			}
+		},
+		{
+			"name": "<Polygon> attribute header",
+			"scope": [
+				"attr.polygon.egg"
+			],
+			"settings": {
+				"foreground": "#60cc69"
+			}
+		},
+		{
+			"name": "<VertexPool> attribute header",
+			"scope": [
+				"header.vertexpool.egg"
+			],
+			"settings": {
+				"foreground": "#3fcc8f",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Attributes for vertex groups",
+			"scope": [
+				"header.group.vertex.master.egg"
+			],
+			"settings": {
+				"foreground":"#91d989"
+			}
+		},
+		{
+			"name": "Attributes for sub-vertex groups",
+			"scope": [
+				"header.group.vertex.sub.egg"
+			],
+			"settings": {
+				"foreground": "#5cb835"
+			}
+		},
+		{
+			"name": "<Scalar> types",
+			"scope": [
+				"types.scalar.egg"
+			],
+			"settings": {
+				"foreground": "#73c2f0"
+			}
+		},
+		{
+			"name": "General keywords",
+			"scope": [
+				"types.general.egg"
+			],
+			"settings": {
+				"foreground": "#e88d68",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Coordinate System Values",
+			"scope": [
+				"types.cs.egg"
+			],
+			"settings": {
+				"foreground": "#915ce6",
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "Egg attribute flags",
+			"scope": [
+				"collection.flag.egg"
+			],
+			"settings": {
+				"foreground": "#569CD6"
+			}
+		},
+		{
+			"name": "Egg attribute headers",
+			"scope": [
+				"collection.header.open.egg",
+				"collection.header.close.egg"
+			],
+			"settings": {
+				"foreground": "#D4D4D4"
+			}
+		},
+		{
+			"name": "Strings",
+			"scope": [
+				"string.double.egg"
+			],
+			"settings": {
+				"foreground": "#CE9178"
+			}
+		}
+		]
+}

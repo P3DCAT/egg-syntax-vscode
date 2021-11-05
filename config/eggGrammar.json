@@ -10,6 +10,11 @@
 			{ "include": "#keywords" },
 			{ "include": "#kwcoll" },
 			{ "include": "#objtype" },
+			{ "include": "#vertexpool" },
+			{ "include": "#coordsysvalues" },
+			{ "include": "#polygon" },
+
+
 
 
 			{ "include": "#transform" },
@@ -24,75 +29,87 @@
 
 			{ "include": "#subvertexgroup" },
 
+			{ "include": "#headerdata" },
 
 			{ "include": "#attributeHeader" },
-			{ "include": "#paren-expression1" },
-			{ "include": "#paren-expression" }
+			{ "include": "#paren-expression1" }
 
 		]
 	  },
 	  "texture": {
-		"match": "Texture",
-		"name": "entity.other.attribute-name.egg"
+		"match": "\\b(\\w*Texture\\w*)\\b",
+		"name": "header.texture.egg"
 	  },
 	  "scalar": {
-		"match": "Scalar",
-		"name": "variable.other.egg"
-	  },
-	  "scalarTypes": {
-		"match": "alpha|fps|minfilter|magfilter",
-		"name": "variable.other.egg"
+		"match": "\\b(\\w*Scalar\\w*)\\b",
+		"name": "attr.scalar.egg"
 	  },
 	  "objtype": {
 		"match": "ObjectType",
-		"name": "markup.underline.egg"
+		"name": "header.object.egg"
+	  },
+	  "scalarTypes": {
+		"match": "\\b(\\w*alpha|fps|minfilter|magfilter|format|wrap|envtype|anisotropic-degree\\w*)\\b",
+		"name": "types.scalar.egg"
 	  },
 	  "keywords": {
-		"match": "rgb|rgba|luminance|structured|linear|mipmap|modulate|dual|binary|blend|blend_no_occlude|ms|clamp|repeat|ground|sphere|barrier|shground|floor|tube|axis|net|local",
-		"name": "markup.italic.egg"
+		"match": "\\b(\\w*rgb|rgba|luminance|structured|linear|mipmap|modulate|dual|binary|blend|blend_no_occlude|ms|clamp|repeat|ground|sphere|barrier|shground|floor|tube|axis|net|local\\w*)\\b",
+		"name": "types.general.egg"
+	  },
+	  "coordsysvalues": {
+		"match": "[X-Z]-Up",
+		"name": "types.cs.egg"
 	  },
 	  "kwcoll": {
 		"match": "collisions|coll|collision",
-		"name": "support.variable.egg"
+		"name": "support.coll.egg"
 	  },
 	  "transform": {
 		"match": "Transform",
-		"name": "markup.bold.egg"
+		"name": "attr.transform.egg"
 	  },
 	  "subtransform": {
 		"match": "Matrix4|Matrix3",
-		"name": "markup.bold.egg"
+		"name": "types.transform.matrix.egg"
 	  },
 	  "maingroup": {
-		"match": "Group",
-		"name": "entity.name.function.egg"
+		"match": "\\b(\\w*Group\\w*)\\b",
+		"name": "header.group.master.egg"
+	  },
+	  "vertexpool": {
+		"match": "\\b(\\w*VertexPool\\w*)\\b",
+		"name": "header.vertexpool.egg"
 	  },
 	  "subgroup": {
-		"match": "VertexPool|Polygon|Model|BFace|DCS",
-		"name": "variable.other.egg"
+		"match": "\\b(\\w*Model|BFace|DCS\\w*)\\b",
+		"name": "header.group.sub.egg"
 	  },
 	  "collectiongroup": {
 		"match": "Vertex",
-		"name": "variable.other.egg"
+		"name": "attr.vertex.egg"
+	  },
+	  "polygon": {
+		"match": "\\b(\\w*Polygon\\w*)\\b",
+		"name": "attr.polygon.egg"
 	  },
 	  "vertexgroup": {
-		"match": "Normal|RGBA|UV|TRef|MRef|VertexRef|Ref|Translate",
-		"name": "support.type.egg"
+		"match": "\\b(\\w*Normal|RGBA|UV|TRef|MRef|VertexRef|Ref|Translate\\w*)\\b",
+		"name": "header.group.vertex.master.egg"
 	  },
 	  "subvertexgroup": {
-		"match": "Tangent|Binormal",
-		"name": "support.variable.egg"
+		"match": "\\b(\\w*Tangent|Binormal\\w*)\\b",
+		"name": "header.group.vertex.sub.egg"
 	  },
-	  "paren-expression": {
+	  "headerdata": {
 		"begin": "{",
 		"end": "}",
 		"beginCaptures": {
-		  "4": { "name": "punctuation.paren.open.egg" }
+		  "0": { "name": "collection.header.open.egg" }
 		},
 		"endCaptures": {
-		  "4": { "name": "punctuation.paren.close.egg" }
+		  "0": { "name": "collection.header.close.egg" }
 		},
-		"name": "entity.name.section.attribute.egg",
+		"name": "meta.collection.header.egg",
 		"patterns": [{ "include": "#expression" }]
 	  },
 	  "paren-expression1": {
@@ -105,18 +122,18 @@
 		  "2": { "name": "punctuation.paren.close.egg" }
 		},
 		"name": "entity.name.type.value.egg",
-		"patterns": [{ "include": "paren-expression" }]
+		"patterns": [{ "include": "#headerdata" }]
 	  },
 	  "attributeHeader": {
 		"begin": "<",
 		"end": ">",
 		"beginCaptures": {
-		  "1": { "name": "punctuation.paren.open.egg" }
+		  "1": { "name": "collection.flag.open.egg" }
 		},
 		"endCaptures": {
-		  "1": { "name": "punctuation.paren.close.egg" }
+		  "1": { "name": "collection.flag.close.egg" }
 		},
-		"name": "entity.name.tag.attributeHeader.egg",
+		"name": "collection.flag.egg",
 		"patterns": [{ "include": "#expression" }]
 	  },
 	  "texPath": {
@@ -134,11 +151,11 @@
 	  "commentTag": {
 		"begin": "<Comment> {",
 		"end": "}",
-		"name": "comment.block.documentation.egg"
+		"name": "comment.header.egg"
 	  },
 	  "comment": {
-		"match": "//",
-		"name": "comment.line.double-slash.egg"
+		"match": "^//.*",
+		"name": "comment.line.egg"
 	  }
 	}
   }

@@ -1,20 +1,31 @@
 {
   "name": "panda3d-egg-syntax",
   "displayName": "Panda3D EGG Syntax",
+  "publisher": "Loonatic",
   "description": "Plugin for Panda3D EGG file support",
-  "version": "0.0.1",
+  "version": "0.1.2",
     "engines": {
         "vscode": "^1.61.0"
     },
+    "keywords": [
+      "panda3d",
+      "egg"
+    ],
     "categories": [
         "Programming Languages"
     ],
+    "icon": "img/pandalogo.png",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/loonaticx/egg-syntax-vscode.git"
+    },
+    "homepage": "https://github.com/loonaticx/egg-syntax-vscode/blob/master/README.md",
     "contributes": {
       "languages": [
         {
           "id": "egg",
           "extensions": [".egg"],
-          "configuration": "language-configuration.json",
+          "configuration": "config/language-configuration.json",
           "filenames": [".egg"]
 
         }
@@ -23,10 +34,16 @@
         {
           "language": "egg",
           "scopeName": "source.egg",
-          "path": "./syntaxes/abc.tmGrammar.json"
+          "path": "config/eggGrammar.json"
         }
       ],
-      "semanticHighlighting": true
+      "themes": [
+        {
+          "label": "egg-color",
+          "uiTheme": "vs-dark",
+          "path": "config/eggColors.json"
+        }
+      ]
     }
 
 }
