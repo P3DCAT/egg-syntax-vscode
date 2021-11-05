@@ -47,5 +47,8 @@
         "path": "config/eggColors.json"
       }
     ]
-  }
+  },
+  "extensionDependencies": [
+    "jsaulou.theme-by-language"
+  ]
 }
