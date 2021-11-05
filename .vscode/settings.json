@@ -1,0 +1,21 @@
+{
+	"editor.semanticHighlighting.enabled": true,
+	"editor.semanticTokenColorCustomizations": {
+		"enabled": true,
+		"rules": {
+			"header.texture.egg": {
+				"foreground": "#ff0000",
+				"fontStyle": "bold"
+			},
+			"type:egg": {
+				"foreground": "#ff07ac"
+			},
+			"test:egg": {
+				"foreground": "#2737c3"
+			},
+			"test.egg": {
+				"foreground": "#bdd827"
+			}
+		}
+		}
+}
