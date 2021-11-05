@@ -16,7 +16,8 @@
 				"header.texture.egg"
 			],
 			"settings": {
-				"foreground": "#42abe3"
+				"foreground": "#d47663",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -35,37 +36,54 @@
 				"header.object.egg"
 			],
 			"settings": {
-				"foreground": "#54a7eb",
-				"fontStyle": "bold"
+				"foreground": "#f75ca9",
+				"fontStyle": "underline"
 			}
 		},
 		{
 			"name": "<Transform> attribute header",
 			"scope": [
-				"header.transform.egg"
+				"attr.transform.egg"
 			],
 			"settings": {
-				"foreground": "#54a7eb",
-				"fontStyle": "bold"
+				"foreground": "#54a7eb"
 			}
 		},
 		{
 			"name": "<Group> attribute header",
 			"scope": [
-				"header.group.egg"
+				"header.group.master.egg"
 			],
 			"settings": {
-				"foreground": "#54a7eb",
+				"foreground": "#5579cf",
 				"fontStyle": "bold"
 			}
 		},
 		{
 			"name": "<Vertex> attribute header",
 			"scope": [
-				"header.vertex.egg"
+				"attr.vertex.egg"
 			],
 			"settings": {
-				"foreground": "#54a7eb",
+				"foreground": "#60cc69"
+			}
+		},
+		{
+			"name": "<Polygon> attribute header",
+			"scope": [
+				"attr.polygon.egg"
+			],
+			"settings": {
+				"foreground": "#60cc69"
+			}
+		},
+		{
+			"name": "<VertexPool> attribute header",
+			"scope": [
+				"header.vertexpool.egg"
+			],
+			"settings": {
+				"foreground": "#3fcc8f",
 				"fontStyle": "bold"
 			}
 		},
@@ -75,8 +93,7 @@
 				"header.group.vertex.master.egg"
 			],
 			"settings": {
-				"foreground": "#54a7eb",
-				"fontStyle": "bold"
+				"foreground":"#91d989"
 			}
 		},
 		{
@@ -85,8 +102,7 @@
 				"header.group.vertex.sub.egg"
 			],
 			"settings": {
-				"foreground": "#54a7eb",
-				"fontStyle": "bold"
+				"foreground": "#5cb835"
 			}
 		},
 		{
@@ -95,7 +111,7 @@
 				"types.scalar.egg"
 			],
 			"settings": {
-				"foreground": "#c286f7"
+				"foreground": "#73c2f0"
 			}
 		},
 		{
@@ -104,8 +120,18 @@
 				"types.general.egg"
 			],
 			"settings": {
-				"foreground": "#D4D4D4",
+				"foreground": "#e88d68",
 				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Coordinate System Values",
+			"scope": [
+				"types.cs.egg"
+			],
+			"settings": {
+				"foreground": "#915ce6",
+				"fontStyle": "underline"
 			}
 		},
 		{
@@ -124,7 +150,16 @@
 				"collection.header.close.egg"
 			],
 			"settings": {
-				"foreground": "#569CD6"
+				"foreground": "#D4D4D4"
+			}
+		},
+		{
+			"name": "Strings",
+			"scope": [
+				"string.double.egg"
+			],
+			"settings": {
+				"foreground": "#CE9178"
 			}
 		}
 		]
