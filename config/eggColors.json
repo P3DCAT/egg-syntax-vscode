@@ -3,11 +3,11 @@
 		{
 			"name": "Comments",
 			"scope": [
-				"comment.block"
+				"comment.header.egg",
+				"comment.line.egg"
 			],
 			"settings": {
-				"foreground": "#81C784",
-				"fontStyle": "italic"
+				"foreground": "#6A9955"
 			}
 		},
 		{
@@ -16,17 +16,115 @@
 				"header.texture.egg"
 			],
 			"settings": {
-				"foreground": "#EF6C00"
+				"foreground": "#42abe3"
 			}
 		},
 		{
 			"name": "<Scalar> attribute header",
 			"scope": [
-				"header.scalar.egg"
+				"attr.scalar.egg"
+			],
+			"settings": {
+				"foreground": "#9CDCFE",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "<ObjectType> attribute header",
+			"scope": [
+				"header.object.egg"
 			],
 			"settings": {
 				"foreground": "#54a7eb",
 				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "<Transform> attribute header",
+			"scope": [
+				"header.transform.egg"
+			],
+			"settings": {
+				"foreground": "#54a7eb",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "<Group> attribute header",
+			"scope": [
+				"header.group.egg"
+			],
+			"settings": {
+				"foreground": "#54a7eb",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "<Vertex> attribute header",
+			"scope": [
+				"header.vertex.egg"
+			],
+			"settings": {
+				"foreground": "#54a7eb",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Attributes for vertex groups",
+			"scope": [
+				"header.group.vertex.master.egg"
+			],
+			"settings": {
+				"foreground": "#54a7eb",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Attributes for sub-vertex groups",
+			"scope": [
+				"header.group.vertex.sub.egg"
+			],
+			"settings": {
+				"foreground": "#54a7eb",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "<Scalar> types",
+			"scope": [
+				"types.scalar.egg"
+			],
+			"settings": {
+				"foreground": "#c286f7"
+			}
+		},
+		{
+			"name": "General keywords",
+			"scope": [
+				"types.general.egg"
+			],
+			"settings": {
+				"foreground": "#D4D4D4",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Egg attribute flags",
+			"scope": [
+				"collection.flag.egg"
+			],
+			"settings": {
+				"foreground": "#569CD6"
+			}
+		},
+		{
+			"name": "Egg attribute headers",
+			"scope": [
+				"collection.header.open.egg",
+				"collection.header.close.egg"
+			],
+			"settings": {
+				"foreground": "#569CD6"
 			}
 		}
 		]
