@@ -1,0 +1,33 @@
+{
+	"tokenColors": [
+		{
+			"name": "Comments",
+			"scope": [
+				"comment.block"
+			],
+			"settings": {
+				"foreground": "#81C784",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "<Texture> attribute header",
+			"scope": [
+				"header.texture.egg"
+			],
+			"settings": {
+				"foreground": "#EF6C00"
+			}
+		},
+		{
+			"name": "<Scalar> attribute header",
+			"scope": [
+				"header.scalar.egg"
+			],
+			"settings": {
+				"foreground": "#54a7eb",
+				"fontStyle": "bold"
+			}
+		}
+		]
+}

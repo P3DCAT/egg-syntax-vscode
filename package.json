@@ -26,7 +26,13 @@
           "path": "./syntaxes/abc.tmGrammar.json"
         }
       ],
-      "semanticHighlighting": true
+      "themes": [
+        {
+          "label": "egg-color",
+          "uiTheme": "vs-dark",
+          "path": "config/eggColors.json"
+        }
+      ]
     }
 
 }
