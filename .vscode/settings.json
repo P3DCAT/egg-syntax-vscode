@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+	"editor.insertSpaces": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.colorDecorators": true,
+    "editor.guides.highlightActiveIndentation": true,
+    "editor.selectionHighlight": true
+
+}

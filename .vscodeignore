@@ -3,4 +3,5 @@
 .gitignore
 .git/**
 *.egg
+node_modules
 vsc-extension-quickstart.md
