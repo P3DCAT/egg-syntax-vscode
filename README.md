@@ -26,3 +26,7 @@ As of this writing, this plugin lacks many crucial features to further integrate
 * Ability to compile bamfiles inside of vscode
 * Other panda3d things.
 * Also fix up this readme. Could be written better but I am too busy to do so at the very moment.
+
+# How to install
+To install download the repo as a zip, extract the zip file, then move the folder to C:\Users\[user]\.vscode\extensions (or ~/.vscode/extensions on Unix based system) .
+Afterwards reload visual studio code 
