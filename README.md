@@ -18,6 +18,8 @@ You will need to configure this theme to apply for only EGG files via Jsaulou's 
 
 It does kind of suck that you have to do this, but I already spent a couple hours trying to integrate semantic highlighting. It didn't work out, so I just resorted to making a theme (couldn't find another way lol).
 
+To install download the repo as a zip, extract the zip file, then move the folder to C:\Users\[user]\.vscode\extensions (or ~/.vscode/extensions on Unix based system) .
+Afterwards reload visual studio code 
 
 # Project Timeline
 As of this writing, this plugin lacks many crucial features to further integrate EGG workflows with VSCode. That being said, here is a list of features that would be nice for this plugin to eventually have:
@@ -26,3 +28,4 @@ As of this writing, this plugin lacks many crucial features to further integrate
 * Ability to compile bamfiles inside of vscode
 * Other panda3d things.
 * Also fix up this readme. Could be written better but I am too busy to do so at the very moment.
+
