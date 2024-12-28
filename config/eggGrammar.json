@@ -154,7 +154,7 @@
 		"name": "comment.header.egg"
 	  },
 	  "comment": {
-		"match": "^//.*",
+		"match": ".?//.*",
 		"name": "comment.line.egg"
 	  }
 	}
